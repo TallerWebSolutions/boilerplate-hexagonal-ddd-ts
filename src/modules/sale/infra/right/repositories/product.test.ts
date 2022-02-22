@@ -6,12 +6,12 @@ describe("getAvailableProducts", () => {
       {
         id: "1",
         description: "chicken pie",
-        stockAmount: 10,
+        price: 20,
       },
       {
         id: "2",
         description: "cheese pie",
-        stockAmount: 15,
+        price: 20,
       },
     ];
 
