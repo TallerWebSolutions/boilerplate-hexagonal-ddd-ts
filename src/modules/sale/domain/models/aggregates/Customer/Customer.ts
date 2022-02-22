@@ -1,7 +1,7 @@
 import { Address } from "../../entities/Address";
 
 export type Customer = {
-  id: number;
+  id: string;
   name: string;
   address: Address;
 };
