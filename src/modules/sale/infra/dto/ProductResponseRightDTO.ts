@@ -1,4 +1,4 @@
-import { Product } from "../../domain/models/aggregates/Product/Product";
+import { ProductAggregate } from "../../domain/models/aggregates/ProductAggregate";
 
 export type ProductResponseRightDTO = {
   id: string;
@@ -10,7 +10,7 @@ export type ProductResponseRightDTO = {
 
 export const productFromRightToDomain = (
   product: ProductResponseRightDTO
-): Product => {
+): ProductAggregate => {
   return {
     id: product.id,
     description: product.description,

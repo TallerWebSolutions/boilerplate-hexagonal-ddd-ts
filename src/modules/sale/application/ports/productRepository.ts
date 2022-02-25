@@ -1,5 +1,5 @@
-import { Product } from "../../domain/models/aggregates/Product/Product";
+import { ProductAggregate } from "../../domain/models/aggregates/ProductAggregate";
 
 export interface ProductRepositoryInterface {
-  getAvailableProducts(): Product[];
+  getAvailableProducts(): ProductAggregate[];
 }

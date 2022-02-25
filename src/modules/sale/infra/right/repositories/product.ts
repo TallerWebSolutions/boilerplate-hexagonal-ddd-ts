@@ -1,10 +1,10 @@
 import { productsMock } from "../../../../mock";
 import { ProductRepositoryInterface } from "../../../application/ports/productRepository";
-import { Product } from "../../../domain/models/aggregates/Product/Product";
+import { ProductAggregate } from "../../../domain/models/aggregates/ProductAggregate";
 import { productFromRightToDomain } from "../../dto/ProductResponseRightDTO";
 
 export const productRepository = (): ProductRepositoryInterface => ({
-  getAvailableProducts: (): Product[] => {
+  getAvailableProducts: (): ProductAggregate[] => {
     try {
       const availableProducts = productsMock.filter((item) => {
         return item.stockAmount > 0;

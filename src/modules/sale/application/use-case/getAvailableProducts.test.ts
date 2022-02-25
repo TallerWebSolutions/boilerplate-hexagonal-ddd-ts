@@ -1,6 +1,6 @@
 import { getAvailableProducts } from "./getAvailableProducts";
 import { productRepository } from "../../infra/right/repositories/product";
-import { Product } from "../../domain/models/aggregates/Product/Product";
+import { ProductAggregate } from "../../domain/models/aggregates/ProductAggregate";
 
 describe("getProductAvailable tests", () => {
   it("should return a list of products ", async () => {
@@ -19,8 +19,8 @@ describe("getProductAvailable tests", () => {
       },
     ];
 
-    expect(await getAvailableProducts(repository)).toMatchObject<Product[]>(
-      products
-    );
+    expect(await getAvailableProducts(repository)).toMatchObject<
+      ProductAggregate[]
+    >(products);
   });
 });
