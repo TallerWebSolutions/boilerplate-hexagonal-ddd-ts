@@ -6,12 +6,8 @@
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "./dist"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["./dist"]
 }
