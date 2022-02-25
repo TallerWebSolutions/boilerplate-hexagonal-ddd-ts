@@ -1,10 +1,10 @@
-import { Product } from "../../domain/models/aggregates/Product/Product";
+import { ProductAggregate } from "../../domain/models/aggregates/ProductAggregate";
 
 import { ProductRepositoryInterface } from "../ports/productRepository";
 
 export const getAvailableProducts = async (
   productRepository: ProductRepositoryInterface
-): Promise<Product[]> => {
+): Promise<ProductAggregate[]> => {
   const products = await productRepository.getAvailableProducts();
 
   return products;
