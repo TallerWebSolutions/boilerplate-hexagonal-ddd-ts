@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 import { getAvailableProducts } from "../../../application/use-case/getAvailableProducts";
-import { productFromDomainToLeft } from "../../dto/CatalogResponseLeftDTO";
+import { productFromDomainToLeft } from "./CatalogResponseExpressDTO";
 import { productRepository } from "../../right/repositories/product";
 
 export const getProductCatalog = async (
