@@ -1,7 +1,7 @@
 import { productsMock } from "../../../../mock";
 import { ProductRepositoryInterface } from "../../../application/ports/productRepository";
 import { ProductAggregate } from "../../../domain/models/aggregates/ProductAggregate";
-import { productFromRightToDomain } from "../../dto/ProductResponseRightDTO";
+import { productFromRightToDomain } from "./ProductResponseRepositoryDTO";
 
 export const productRepository = (): ProductRepositoryInterface => ({
   getAvailableProducts: (): ProductAggregate[] => {

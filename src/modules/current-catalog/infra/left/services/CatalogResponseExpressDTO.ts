@@ -1,12 +1,12 @@
-import { ProductAggregate } from "../../domain/models/aggregates/ProductAggregate";
+import { ProductAggregate } from "../../../domain/models/aggregates/ProductAggregate";
 
-export type CatalogResponseLeftDTO = {
+export type CatalogResponseExpressDTO = {
   description: string;
   price: number;
 };
 
 export const productFromDomainToLeft = (
   product: ProductAggregate
-): CatalogResponseLeftDTO => {
+): CatalogResponseExpressDTO => {
   return { description: product.description, price: product.price };
 };
