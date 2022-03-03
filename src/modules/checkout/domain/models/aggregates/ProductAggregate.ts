@@ -9,10 +9,9 @@ export const createProduct = function (
   description: string,
   price: number
 ): ProductAggregate {
-  const product: ProductAggregate = {
+  return {
     id: id,
     description: description,
     price: price,
   };
-  return product;
 };

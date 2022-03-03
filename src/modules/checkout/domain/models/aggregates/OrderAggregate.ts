@@ -18,10 +18,9 @@ const addItems = function (this: OrderAggregate, item: OrderItem): OrderItem[] {
 };
 
 export const createOrder = function (item: OrderItem): OrderAggregate {
-  const order: OrderAggregate = {
+  return {
     id: "1", //TODO Fix me - I supposed to be a uuid
     items: [],
     addItems: addItems,
   };
-  return order;
 };
