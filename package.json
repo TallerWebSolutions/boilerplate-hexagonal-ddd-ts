@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "node index.js",
     "build": "tsc -p tsconfig.json",
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/modules/sale/infra/left/expressAdapter/index.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/modules/current-catalog/infra/left/expressAdapter/index.ts"
   },
   "author": "",
   "license": "ISC",
